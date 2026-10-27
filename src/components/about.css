@@ -1,0 +1,359 @@
+
+.about-page {
+  min-height: 100vh;
+  background-color: #f2f7f9;
+  font-family: Arial, sans-serif;
+  color: #111827;
+}
+
+/* Navigation Bar */
+.about-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 25px 25px;
+  min-height: 130px;
+  background: linear-gradient(110deg, #11796f, #12bba8);
+  box-shadow: 0 8px 25px rgba(0, 100, 100, 0.12);
+}
+
+.about-navbar .nav-link {
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.about-navbar .nav-link:hover {
+  color: #d9fffa;
+}
+
+.about-navbar .about-brand .nav-link {
+  font-size: 42px;
+  margin-right: 30px;
+}
+
+/* Main Container */
+.about-container {
+  padding: 50px 1.5%;
+}
+
+/* Introduction Section */
+.about-hero {
+  background: linear-gradient(110deg, #ffffff, #ecfdfb);
+  padding: 55px;
+  border-radius: 38px;
+  margin-bottom: 45px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+}
+
+.about-badge {
+  display: inline-block;
+  background-color: #c8faf0;
+  color: #087e78;
+  padding: 16px 23px;
+  border-radius: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.about-hero h1 {
+  font-size: clamp(38px, 4.2vw, 72px);
+  font-weight: 400;
+  line-height: 1.18;
+  margin-bottom: 25px;
+}
+
+.about-description {
+  font-size: 24px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* Why Choose Us */
+.choose-card {
+  background-color: white;
+  padding: 40px;
+  border-top: 8px solid #12bba8;
+  border-radius: 32px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.04);
+  height: 100%;
+}
+
+.choose-card h2 {
+  color: #087e78;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.choose-card ul {
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+.choose-card li {
+  font-size: 22px;
+  line-height: 1.65;
+  padding-bottom: 15px;
+}
+
+/* Mission, Vision and Promise */
+.about-values {
+  margin-bottom: 45px;
+}
+
+.value-card {
+  height: 100%;
+  min-height: 345px;
+  padding: 38px;
+  border-radius: 32px;
+  background-color: white;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.04);
+}
+
+.value-card h2 {
+  color: #087e78;
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.value-card p {
+  font-size: 23px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* Story Section */
+.about-story {
+  background-color: white;
+  padding: 55px;
+  border-radius: 38px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.04);
+}
+
+.about-story h2 {
+  color: #087e78;
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.about-story > .row > div:first-child p {
+  font-size: 23px;
+  line-height: 1.9;
+  margin-top: 35px;
+}
+
+/* Statistics */
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.stat-card {
+  text-align: center;
+  background-color: white;
+  padding: 35px 20px;
+  border-top: 7px solid #12bba8;
+  border-radius: 30px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h3 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.stat-card p {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+/* Footer */
+.about-footer {
+  background-color: #0f172a;
+  color: #dbeafe;
+  padding: 75px 2.5% 0;
+}
+
+.about-footer h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.about-footer p {
+  font-size: 22px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 35px;
+}
+
+.footer-links a {
+  color: #dbeafe;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #12bba8;
+}
+
+.about-copyright {
+  text-align: center;
+  border-top: 1px solid #334155;
+  margin-top: 55px;
+  padding: 30px 10px;
+  font-size: 21px;
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .about-navbar {
+    justify-content: center;
+  }
+
+  .about-navbar .nav-link {
+    font-size: 18px;
+  }
+
+  .about-navbar .about-brand .nav-link {
+    font-size: 32px;
+  }
+
+  .about-hero,
+  .about-story {
+    padding: 35px;
+  }
+
+  .about-description,
+  .value-card p,
+  .about-story > .row > div:first-child p {
+    font-size: 19px;
+  }
+
+  .choose-card h2,
+  .value-card h2 {
+    font-size: 30px;
+  }
+
+  .choose-card li {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .about-navbar {
+    padding: 18px 10px;
+    gap: 5px;
+  }
+
+  .about-navbar .about-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-navbar .about-brand .nav-link {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .about-navbar .nav-link {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .about-container {
+    padding: 25px 15px;
+  }
+
+  .about-hero,
+  .about-story {
+    padding: 25px;
+    border-radius: 25px;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+  }
+
+  .about-description {
+    font-size: 17px;
+  }
+
+  .about-badge {
+    font-size: 16px;
+  }
+
+  .choose-card {
+    padding: 25px;
+  }
+
+  .choose-card h2,
+  .value-card h2 {
+    font-size: 29px;
+  }
+
+  .choose-card li {
+    font-size: 17px;
+  }
+
+  .value-card {
+    min-height: auto;
+    padding: 28px;
+    border-radius: 25px;
+  }
+
+  .value-card p,
+  .about-story > .row > div:first-child p {
+    font-size: 17px;
+  }
+
+  .about-story h2 {
+    font-size: 32px;
+  }
+
+  .stat-card h3 {
+    font-size: 40px;
+  }
+
+  .stat-card p {
+    font-size: 18px;
+  }
+
+  .about-footer {
+    padding: 40px 25px 0;
+  }
+
+  .about-footer h2 {
+    font-size: 28px;
+  }
+
+  .about-footer p,
+  .footer-links a {
+    font-size: 17px;
+  }
+
+  .footer-links {
+    padding-left: 0;
+  }
+
+  .about-copyright {
+    font-size: 15px;
+  }
+}

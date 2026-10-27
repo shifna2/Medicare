@@ -1,0 +1,37 @@
+.home-navbar {
+  background: linear-gradient(110deg, #11786f, #10b9a8);
+  min-height: 90px;
+  padding: 20px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.home-logo {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.home-nav-links a {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.home-nav-links a:hover {
+  color: #bdfcf2;
+}

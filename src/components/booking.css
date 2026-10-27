@@ -1,0 +1,269 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.booking-page {
+  min-height: 100vh;
+  background: #f1f6f8;
+  font-family: Arial, sans-serif;
+  color: #111827;
+}
+
+/* Navbar */
+.booking-navbar {
+  width: 100%;
+  min-height: 150px;
+  padding: 25px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: linear-gradient(110deg, #11786f, #14b8a6);
+  color: white;
+}
+
+.booking-navbar h2 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.booking-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.booking-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.booking-links a:hover {
+  color: #ccfbf1;
+}
+
+/* Main booking section */
+.booking-container {
+  width: 68%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 50px 50px;
+  background: #ffffff;
+  border-radius: 35px;
+  box-shadow: 0 20px 55px rgba(15, 23, 42, 0.06);
+}
+
+.booking-container h1 {
+  color: #11786f;
+  font-size: 48px;
+  font-weight: normal;
+  margin: 0 0 25px;
+}
+
+.booking-container > p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Form */
+.booking-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-container label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 15px;
+}
+
+.booking-container input,
+.booking-container select {
+  width: 100%;
+  height: 78px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  background: #f8fafc;
+  font-size: 22px;
+  color: #111827;
+  outline: none;
+}
+
+.booking-container input:focus,
+.booking-container select:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.12);
+}
+
+/* Submit button */
+.booking-container button {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(110deg, #11786f, #14b8a6);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-container button:hover {
+  background: #0f766e;
+}
+
+/* Footer */
+.booking-footer {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 45px;
+  margin-top: 80px;
+  padding: 55px 40px 25px;
+  background: #0f172a;
+  color: white;
+}
+
+.booking-footer h3 {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 15px 0 25px;
+}
+
+.booking-footer p,
+.booking-footer a {
+  font-size: 23px;
+  line-height: 1.8;
+  color: #dbeafe;
+}
+
+.booking-footer a {
+  display: block;
+  text-decoration: none;
+}
+
+.booking-footer a:hover {
+  color: #14b8a6;
+}
+
+.booking-footer .copyright {
+  grid-column: 1 / -1;
+  padding-top: 25px;
+  border-top: 1px solid #374151;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 1100px) {
+  .booking-navbar {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .booking-links {
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .booking-links a {
+    font-size: 18px;
+  }
+
+  .booking-container {
+    width: 90%;
+    padding: 35px;
+  }
+
+  .booking-container h1 {
+    font-size: 36px;
+  }
+
+  .booking-container > p {
+    font-size: 18px;
+  }
+
+  .booking-container label {
+    font-size: 18px;
+  }
+
+  .booking-container input,
+  .booking-container select {
+    height: 60px;
+    font-size: 17px;
+  }
+
+  .booking-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-footer .copyright {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-navbar h2 {
+    font-size: 32px;
+  }
+
+  .booking-links {
+    gap: 15px;
+  }
+
+  .booking-container {
+    width: 94%;
+    margin: 25px auto;
+    padding: 25px 20px;
+    border-radius: 25px;
+  }
+
+  .booking-container h1 {
+    font-size: 30px;
+  }
+
+  .booking-container > p {
+    font-size: 16px;
+  }
+
+  .booking-container label {
+    font-size: 16px;
+  }
+
+  .booking-container input,
+  .booking-container select {
+    height: 55px;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .booking-container button {
+    min-height: 60px;
+    font-size: 18px;
+  }
+
+  .booking-footer {
+    padding: 30px 20px;
+  }
+
+  .booking-footer h3 {
+    font-size: 26px;
+  }
+
+  .booking-footer p,
+  .booking-footer a {
+    font-size: 16px;
+  }
+}
